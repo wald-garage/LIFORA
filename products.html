@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products — Lifora</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ── Navbar ── -->
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="img/fto.png" alt="Lifora Logo" class="logo-img" />
+    Lifora
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-actions">
+    <a href="contact.html" class="nav-cta">Hubungi Kami →</a>
+    <button class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<nav class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="products.html">Products</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<!-- ── Products Hero ── -->
+<section class="products-hero">
+  <span class="star" style="top:30%;left:8%;animation-delay:.6s;">✦</span>
+  <span class="star" style="top:50%;right:10%;animation-delay:1.3s;font-size:.7rem;">✦</span>
+  <div class="container">
+    <div class="fade-in" style="margin-bottom: .5rem;">
+      <div class="section-eyebrow" style="margin-inline: auto;">✦ Semua Produk</div>
+    </div>
+    <h1 class="section-title fade-in" style="text-align:center; margin-inline:auto; max-width:600px;">
+      Ekosistem <em>lengkap</em><br>untuk kesehatan Anda
+    </h1>
+    <p class="section-sub fade-in" style="text-align:center; margin-inline:auto; margin-top:.75rem;">
+      Klik produk apa pun untuk langsung menghubungi kami via WhatsApp dan dapatkan info harga terbaik.
+    </p>
+  </div>
+</section>
+
+<!-- ── Products Grid ── -->
+<section class="products-grid">
+  <div class="container">
+    <div class="products-grid-inner">
+
+      <!-- 1. Smart Bottle -->
+      <div class="product-card card-3d fade-in" onclick="beli('Smart Bottle Lifora')">
+        <div class="product-img-wrap">
+          <img src="img/fto1.png" alt="Smart Bottle Lifora" class="product-img" />
+        </div>
+        <div class="product-name">Smart Bottle Lifora</div>
+        <p class="product-desc">
+          Botol minum cerdas yang memantau asupan cairan harian Anda secara otomatis. Dilengkapi sensor suhu, pengingat minum, dan sinkronisasi ke aplikasi Lifora. Material food-grade BPA-free, kapasitas 600ml.
+        </p>
+        <div class="product-meta">
+          <span class="product-tag">Hydration</span>
+          <button class="product-btn">Beli via WhatsApp <span>→</span></button>
+        </div>
+      </div>
+
+      <!-- 2. Smart Watch -->
+      <div class="product-card card-3d fade-in" onclick="beli('Lifora Smart Watch')">
+        <div class="product-img-wrap">
+          <img src="img/fto2.png" alt="Lifora Smart Watch" class="product-img" />
+        </div>
+        <div class="product-name">Lifora Smart Watch</div>
+        <p class="product-desc">
+          Smartwatch premium dengan layar AMOLED 1.45", sensor detak jantung 24/7, SpO2, GPS bawaan, dan baterai 7 hari. Tahan air hingga 50 meter. Tersedia dalam 4 pilihan warna elegan.
+        </p>
+        <div class="product-meta">
+          <span class="product-tag">Wearable</span>
+          <button class="product-btn">Beli via WhatsApp <span>→</span></button>
+        </div>
+      </div>
+
+      <!-- 3. Smart Scale -->
+      <div class="product-card card-3d fade-in" onclick="beli('Lifora Smart Scale')">
+        <div class="product-img-wrap">
+          <img src="img/fto5.png" alt="Lifora Smart Scale" class="product-img" />
+        </div>
+        <div class="product-name">Lifora Smart Scale</div>
+        <p class="product-desc">
+          Timbangan pintar dengan 14 metrik tubuh: berat, BMI, massa otot, lemak visceral, massa tulang, usia metabolik, dan lebih banyak lagi. Layar LED HD besar, kapasitas 180kg, sambung ke 8 pengguna berbeda. Cukup injak, data langsung masuk ke aplikasi Lifora Anda secara otomatis.
+        </p>
+        <div class="product-meta">
+          <span class="product-tag">Fitness</span>
+          <button class="product-btn">Beli via WhatsApp <span>→</span></button>
+        </div>
+      </div>
+
+      <!-- 4. Health App -->
+      <div class="product-card card-3d fade-in" onclick="beli('Lifora Health App')">
+        <div class="product-img-wrap">
+          <img src="img/fto4.png" alt="Lifora Health App" class="product-img" />
+        </div>
+        <div class="product-name">Lifora Health App</div>
+        <p class="product-desc">
+          Pusat kendali ekosistem Lifora di smartphone Anda. Dashboard real-time, riwayat kesehatan 90 hari, AI insight personal, goal setting, dan integrasi dengan semua perangkat Lifora. Tersedia iOS & Android.
+        </p>
+        <div class="product-meta">
+          <span class="product-tag">Software</span>
+          <button class="product-btn">Info Lebih Lanjut <span>→</span></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom note -->
+    <div class="fade-in" style="text-align:center; margin-top: 3.5rem; padding-top: 2.5rem; border-top: 1px solid var(--border);">
+      <p style="color: var(--text-2); font-size: .9375rem; margin-bottom: 1.25rem;">
+        Butuh bantuan memilih produk yang tepat?
+      </p>
+      <a href="contact.html" class="btn btn-primary" style="display:inline-flex;">
+        Hubungi Tim Lifora →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ── -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="img/fto.png" alt="Lifora" class="footer-logo-img" />
+        Lifora<span></span>
+      </div>
+      <p class="footer-copy">© 2026 Lifora. Smart Health Ecosystem.</p>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

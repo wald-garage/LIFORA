@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lifora — Smart Health Ecosystem</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ── Navbar ── -->
+
+<!-- ── LOADING SCREEN ── -->
+<div id="loading-screen">
+  <div class="loading-inner">
+    <div class="loading-logo-wrap">
+      <img src="img/fto.png" alt="Lifora" class="loading-logo-img" />
+      <div class="loading-ring"></div>
+      <div class="loading-ring loading-ring-2"></div>
+    </div>
+    <div class="loading-brand">Lifora</div>
+    <div class="loading-tagline">Smart Health Ecosystem</div>
+    <div class="loading-bar-wrap">
+      <div class="loading-bar"></div>
+    </div>
+  </div>
+</div>
+
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="img/fto.png" alt="Lifora Logo" class="logo-img" />
+    Lifora
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-actions">
+    <a href="products.html" class="nav-cta">Explore →</a>
+    <button class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<nav class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="products.html">Products</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <!-- Sparkle stars -->
+  <span class="star" style="top:15%;left:8%;animation-delay:0s;">✦</span>
+  <span class="star" style="top:30%;right:10%;animation-delay:.8s;">✦</span>
+  <span class="star" style="top:70%;left:5%;animation-delay:1.6s;font-size:.7rem;">✦</span>
+  <span class="star" style="top:80%;right:20%;animation-delay:.4s;font-size:.6rem;">✦</span>
+  <span class="star" style="top:50%;left:55%;animation-delay:1.2s;font-size:.65rem;">✦</span>
+
+  <div class="container">
+    <div class="hero-inner">
+      <!-- Left -->
+      <div class="hero-left fade-in">
+        <div class="hero-badge">
+          <span class="hero-badge-dot">✦</span>
+          Health Technology · Indonesia
+        </div>
+        <h1 class="hero-title">
+          <span class="hero-typed-static"></span><br>
+          <span class="accent hero-typed-word" id="heroTyped">Health</span><br>
+          Ecosystem
+        </h1>
+        <p class="hero-sub">
+          Lifora membantu Anda memantau kesehatan secara real-time melalui teknologi pintar yang terintegrasi dalam satu platform modern.
+        </p>
+        <div class="hero-actions">
+          <a href="products.html" class="btn btn-primary">
+            Explore Products <span>→</span>
+          </a>
+          <a href="about.html" class="btn btn-ghost">
+            Tentang Kami
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-num"><span data-count="15" data-suffix="k+">15k+</span></div>
+            <div class="stat-label">Pengguna Aktif</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num"><span data-count="5">5</span></div>
+            <div class="stat-label">Produk Smart</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num"><span data-count="98" data-suffix="%">98%</span></div>
+            <div class="stat-label">Kepuasan User</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: 3D Health Card Visual -->
+      <div class="hero-visual">
+        <div class="hero-device-wrap">
+          <!-- Orbit rings -->
+          <div class="hero-ring"></div>
+          <div class="hero-ring hero-ring-2"></div>
+          <div class="hero-ring hero-ring-3"></div>
+
+          <!-- Orbit nodes -->
+          <div class="orbit-node" style="top:0;left:50%;transform:translate(-50%,-50%);">⌚</div>
+          <div class="orbit-node" style="bottom:0;left:50%;transform:translate(-50%,50%);">💧</div>
+          <div class="orbit-node" style="top:50%;right:0;transform:translate(50%,-50%);">❤️</div>
+          <div class="orbit-node" style="top:50%;left:0;transform:translate(-50%,-50%);">📊</div>
+
+          <!-- Main 3D Health Card -->
+          <div class="hero-health-card">
+            <div class="card-logo-top">
+              <div>
+                <div class="card-brand">LIFORA</div>
+                <div style="font-size:.6rem;color:var(--text-3);margin-top:.1rem;">Smart Health</div>
+              </div>
+              <div class="card-icon">
+                <img src="img/fto.png" alt="Lifora" style="width:28px;height:28px;object-fit:contain;border-radius:6px;" />
+              </div>
+            </div>
+            <!-- Health metrics mini grid -->
+            <div class="card-metrics-grid">
+              <div class="card-metric-item">
+                <div class="card-metric-icon">❤️</div>
+                <div class="card-metric-val">72<span style="font-size:.8rem;opacity:.7"> bpm</span></div>
+                <div class="card-metric-label">Heart Rate</div>
+              </div>
+              <div class="card-metric-item">
+                <div class="card-metric-icon">🩸</div>
+                <div class="card-metric-val">98<span style="font-size:.8rem;opacity:.7">%</span></div>
+                <div class="card-metric-label">SpO₂</div>
+              </div>
+            </div>
+            <!-- Activity bar -->
+            <div style="background:rgba(34,197,94,.07);border:1px solid rgba(34,197,94,.12);border-radius:8px;padding:.5rem .6rem;display:flex;justify-content:space-between;align-items:center;">
+              <div style="font-size:.65rem;color:var(--text-3);text-transform:uppercase;letter-spacing:.06em;">Aktivitas</div>
+              <div style="display:flex;gap:.2rem;align-items:flex-end;">
+                <div style="width:4px;height:10px;background:rgba(34,197,94,.3);border-radius:2px;"></div>
+                <div style="width:4px;height:14px;background:rgba(34,197,94,.5);border-radius:2px;"></div>
+                <div style="width:4px;height:8px;background:rgba(34,197,94,.3);border-radius:2px;"></div>
+                <div style="width:4px;height:18px;background:var(--green-400);border-radius:2px;"></div>
+                <div style="width:4px;height:12px;background:rgba(34,197,94,.5);border-radius:2px;"></div>
+                <div style="width:4px;height:16px;background:rgba(34,197,94,.4);border-radius:2px;"></div>
+              </div>
+              <div style="display:flex;align-items:center;gap:.3rem;">
+                <div class="card-pulse-dot"></div>
+                <div style="font-size:.6rem;color:var(--green-400);font-weight:700;">LIVE</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mini floating badge -->
+          <div class="hero-mini-card">
+            <div class="mini-card-label">SpO₂</div>
+            <div class="mini-card-val">98%</div>
+            <div class="mini-card-sub">Oksigen darah</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── STATS STRIP (GreenBank style) ── -->
+<div class="stats-strip">
+  <div class="container">
+    <div class="stats-strip-inner">
+      <div class="stat-strip-item fade-in">
+        <div class="stat-strip-num">2y+</div>
+        <div class="stat-strip-label">Berdiri</div>
+      </div>
+      <div class="stat-strip-item fade-in">
+        <div class="stat-strip-num">5+</div>
+        <div class="stat-strip-label">Produk Pintar</div>
+      </div>
+      <div class="stat-strip-item fade-in">
+        <div class="stat-strip-num">2yr</div>
+        <div class="stat-strip-label">Garansi Resmi</div>
+      </div>
+      <div class="stat-strip-item fade-in">
+        <div class="stat-strip-num">15k+</div>
+        <div class="stat-strip-label">Pengguna Aktif</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── TRUST STRIP ── -->
+<div class="trust-strip">
+  <div class="container">
+    <div class="trust-label">Dipercaya oleh komunitas di seluruh Indonesia</div>
+    <div class="trust-logos">
+      <span class="trust-logo">Tokopedia</span>
+      <span class="trust-logo">Shopee</span>
+      <span class="trust-logo">Lazada</span>
+      <span class="trust-logo">Alodokter</span>
+      <span class="trust-logo">HelloSehat</span>
+      <span class="trust-logo">Halodoc</span>
+    </div>
+  </div>
+</div>
+
+<!-- ── FEATURES ── -->
+<section class="features">
+  <div class="container">
+    <div class="features-header">
+      <div class="fade-in" style="max-width: 540px;">
+        <div class="section-eyebrow">✦ Fitur Unggulan</div>
+        <h2 class="section-title">Kesehatan cerdas,<br><em>dalam genggaman</em></h2>
+        <p class="section-sub">Platform terintegrasi yang menghubungkan perangkat, data, dan insight kesehatan Anda secara real-time.</p>
+      </div>
+      <div class="fade-in">
+        <a href="products.html" class="btn btn-ghost">Lihat Semua →</a>
+      </div>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card card-3d fade-in">
+        <div class="feature-icon">📡</div>
+        <h3>Real-Time Monitoring</h3>
+        <p>Pantau data kesehatan Anda 24/7 langsung dari perangkat wearable yang terhubung ke platform Lifora.</p>
+      </div>
+      <div class="feature-card card-3d fade-in">
+        <div class="feature-icon">🧠</div>
+        <h3>AI Health Insight</h3>
+        <p>Analisis berbasis kecerdasan buatan yang memberikan rekomendasi personal sesuai kondisi tubuh Anda.</p>
+      </div>
+      <div class="feature-card card-3d fade-in">
+        <div class="feature-icon">🔗</div>
+        <h3>Ekosistem Terpadu</h3>
+        <p>Semua perangkat Lifora terhubung dalam satu dashboard — dari smartwatch hingga smart bottle.</p>
+      </div>
+      <div class="feature-card card-3d fade-in">
+        <div class="feature-icon">🔒</div>
+        <h3>Data Pribadi Aman</h3>
+        <p>Enkripsi end-to-end memastikan data kesehatan Anda tetap aman dan hanya bisa diakses oleh Anda.</p>
+      </div>
+      <div class="feature-card card-3d fade-in">
+        <div class="feature-icon">📱</div>
+        <h3>Multi-Device Sync</h3>
+        <p>Akses data kesehatan dari smartphone, tablet, maupun desktop secara bersamaan dan real-time.</p>
+      </div>
+      <div class="feature-card card-3d fade-in">
+        <div class="feature-icon">🏆</div>
+        <h3>Reward & Goals</h3>
+        <p>Tetap termotivasi dengan sistem target harian, pencapaian mingguan, dan reward untuk gaya hidup sehat.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── WHY LIFORA ── -->
+<section class="why">
+  <div class="container">
+    <div class="why-inner">
+      <div class="why-visual fade-in">
+        <!-- 3D Device mock -->
+        <div class="why-device">
+          <div class="device-screen">
+            <div class="device-row short"></div>
+            <div class="device-circle">❤️</div>
+            <div class="device-metric">72 <span style="font-size:.875rem;opacity:.7">bpm</span></div>
+            <div class="device-metric-label">Heart Rate</div>
+            <div class="device-row" style="margin-top:.5rem"></div>
+            <div class="device-row short"></div>
+            <div class="device-row" style="width:75%"></div>
+          </div>
+        </div>
+        <!-- Floating badge -->
+        <div class="why-badge">
+          <div class="why-badge-val">98%</div>
+          <div class="why-badge-label">Akurasi sensor</div>
+        </div>
+      </div>
+
+      <div class="fade-in">
+        <div class="section-eyebrow">✦ Kenapa Lifora?</div>
+        <h2 class="section-title">Dirancang untuk<br><em>hidup yang lebih sehat</em></h2>
+        <div class="why-list">
+          <div class="why-item">
+            <div class="why-item-icon">🎯</div>
+            <div class="why-item-text">
+              <h4>Akurasi Sensor Tinggi</h4>
+              <p>Perangkat Lifora menggunakan sensor medis-grade yang memberikan data akurat dan konsisten setiap saat.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-item-icon">⚡</div>
+            <div class="why-item-text">
+              <h4>Setup Cepat, 5 Menit</h4>
+              <p>Cukup unduh aplikasi, scan perangkat, dan mulai monitor kesehatan Anda — tanpa konfigurasi rumit.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-item-icon">🌍</div>
+            <div class="why-item-text">
+              <h4>Dukungan Lokal Indonesia</h4>
+              <p>Customer support berbahasa Indonesia, siap membantu Anda setiap hari mulai pukul 08.00–22.00 WIB.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-item-icon">💎</div>
+            <div class="why-item-text">
+              <h4>Garansi Resmi 2 Tahun</h4>
+              <p>Setiap produk Lifora dilindungi garansi resmi 2 tahun dengan layanan servis di seluruh kota besar Indonesia.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA Banner ── -->
+<section class="cta-banner">
+  <div class="container">
+    <div class="cta-banner-inner fade-in">
+      <span class="star" style="top:20%;left:5%;animation-delay:.3s;">✦</span>
+      <span class="star" style="bottom:20%;right:30%;animation-delay:1s;font-size:.7rem;">✦</span>
+      <div style="position:relative;">
+        <h2>Mulai perjalanan<br>sehat Anda hari ini</h2>
+        <p>Bergabung bersama 15.000+ pengguna aktif Lifora di seluruh Indonesia.</p>
+      </div>
+      <a href="products.html" class="btn-white">Lihat Produk →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ── -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="img/fto.png" alt="Lifora" class="footer-logo-img" />
+        Lifora<span></span>
+      </div>
+      <p class="footer-copy">© 2026 Lifora. Smart Health Ecosystem.</p>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
